@@ -1,0 +1,150 @@
+body{background:#000;
+margin:0;
+padding:0;}
+
+p{margin:0;
+padding:0;}
+
+.clear{clear:both;}
+
+
+#container{width:1000px;
+background:orange;
+margin:50px auto;
+overflow:hidden;}
+
+canvas{display:block;
+float:left;
+}
+
+#canvasBg{background:#fff;}
+
+#overlapping canvas{margin:-600px 0 0;}
+
+/**CONTROLS**/
+/****CONTROLS***/
+#controls{
+width: 200px;
+overflow: hidden;
+}
+
+#controls h4{
+background: green;
+color: #9cd641;
+text-align: center;
+padding: 10px 0;
+margin: 0;
+border-bottom: 1px solid #162105;
+}
+
+#btnContainer{
+background: #b2d877;
+border-bottom: 1px solid #162105;
+padding: 10px 10px 0 10px
+}
+
+#seekVol{}
+
+#seekVol p{
+width:52px;
+float:left;
+}
+
+button{
+cursor:pointer;
+width:35px;
+height:35px;
+border:0;
+outline:none;}
+
+input{
+outline:none;
+}
+
+#seek{
+padding: 10px;
+background: #fdc03c;
+overflow: hidden;
+border-bottom:1px solid #c45e03;}
+
+#seek p{float:left; width:50px;}
+
+input#seekSlider{
+position:relative;
+top:10px;}
+
+#volume{
+clear:both;
+padding: 10px;
+background: #fdc03c;
+overflow: hidden;
+border-bottom:1px solid #c45e03;}
+
+#volume p{float:left; width:50px;}
+
+input#volumeSlider{
+position:relative;
+top:10px;}
+/**TRACK Styling rules for different browsers**/
+
+/*Chrome**/
+input[type='range']{
+-webkit-appearance: none !important;
+margin:0px;
+padding:0px;
+background:#00364f;
+height:5px;
+-webkit-border-radius:10px;
+}
+/*IE*/
+input[type='range']::-ms-fill-lower{
+	background:#00364f;}
+
+/*IE*/
+input[type='range']::-ms-fill-upper{
+	background:#00364f;}
+
+/*FF*/
+input[type='range']::-moz-range-track{
+	border:none;
+	background:#00364f;
+	margin:0px;
+padding:0px;
+height:5px;
+-moz-border-radius:10px;}
+
+	
+	
+/**THUMB Styling rules for different browsers**/	
+/*Chrome*/
+input[type='range']::-webkit-slider-thumb{
+	-webkit-appearance:none !important;
+	background:radial-gradient(#fff, #00364f);
+	height:10px;
+	width:10px;
+	border-radius:100%;
+	cursor:pointer;
+	}
+	
+/*FF*/
+input[type='range']::-moz-slider-thumb{
+	background:radial-gradient(#fff, #00364f);
+	height:10px;
+	width:10px;
+	border-radius:100%;
+	cursor:pointer;
+	}
+	
+/*IE*/
+input[type='range']::-ms-thumb{
+	-webkit-appearance:none !important;
+	background:radial-gradient (#fff, #00364f);
+	height:10px;
+	width:10px;
+	border-radius:100%;
+	cursor:pointer;
+	}
+
+button#playpausebtn{background:url('../img/audioPause.png') no-repeat;}
+
+button#mutebtn{background:url('../img/audioOff.png') no-repeat;}

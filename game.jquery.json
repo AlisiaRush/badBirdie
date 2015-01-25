@@ -1,0 +1,23 @@
+{
+	"name":"mygame",
+	"title": "BadBirdie",
+	"description": 
+	"This is a game that I have created from my wildd imaginative mind. I am presenting it to you for the first time",
+	
+	"keywords":[
+		"html5",
+		"game",
+		"css",
+		"animation"
+	],
+	
+	"version":0.1.1,
+	"author":{
+		"name": "Alisia Rush",
+		"url":"http://www.arushdesigns.com"
+	},
+	
+	"dependencies":{
+		"jquery": ">=1.11"
+	}
+}
